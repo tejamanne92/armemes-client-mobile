@@ -11,8 +11,8 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 
-import AppReducer from './src/reducers/app.reducer';
-import HomeContainer from './src/views/home/home.container';
+import { ROOT_REDUCER } from './reducers';
+import HomeContainer from './containers/home.container';
 
 const instructions = Platform.select({
   ios: 
@@ -23,7 +23,7 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu'
 });
 
-const store = createStore(AppReducer);
+const store = createStore(ROOT_REDUCER);
 
 export default class App extends Component {
   render() {
@@ -40,16 +40,6 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
+    backgroundColor: '#CCC',
   }
 });

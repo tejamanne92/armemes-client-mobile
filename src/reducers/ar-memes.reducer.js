@@ -2,7 +2,7 @@ const INITIAL_STATE = {
   title: 'Welcome...'
 };
 
-export const HOME = (state = INITIAL_STATE, action) => {
+export const AR_MEMES = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case '':
       break;
