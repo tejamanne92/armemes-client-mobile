@@ -11,13 +11,11 @@ const SimpleCard = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        borderColor: '#D4D5D5',
-        borderRadius: 2,
+        backgroundColor: 'white',
         shadowColor: '#000',
         shadowOffset: {width: 0, height: 2},
-        shadowOpacity: 0.2,
-        padding: 5,
-        flex: 1
+        shadowOpacity: 0.1,
+        marginTop:5
     }
 })
 
